@@ -1,0 +1,18 @@
+<html>
+<body>
+Enter year : <input type="text" id="s"><br>
+<button onclick="lp()">Check</button>
+<p id="res"></p>
+<script>
+function lp() {
+let y=parseInt(document.getElementById("s").value);
+if(y%4==0 && y%100!==0 || y%400==0){
+document.getElementById("res").innerHTML= (y +"= is leep year") ;
+}
+else{
+document.getElementById("res").innerHTML= (y +"= is not leep year");
+}
+}
+</script>
+</body>
+</html>

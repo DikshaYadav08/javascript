@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+var a=0,b=1,c,i,n;
+n=parseInt(prompt("enter series length"));
+document.write(a +"  "+b);
+for(i=n,i<=n-2;i++){
+c=a+b;
+dociment.write(" "+c);
+a=b;
+b=c;
+}
+</script>
+</body>
+</html>

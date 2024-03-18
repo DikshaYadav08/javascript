@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+body{background:blue;}
+img{
+	width:250px;
+	height:250px;
+	cursor:pointer;
+	}
+</style>
+</head>
+<body>
+<div id = "main">
+<img id="image" src="rose.jpg">
+</div>
+<script>
+let BlueBG=true;
+ function mover(){
+image.src="flower.jpg";
+}
+ function mout(){
+image.src="candels.jpg";
+}
+ function mclick(){
+image.src="girls.jpg";
+}
+image.addEventListener('mouseover',mover);
+image.addEventListener('mouseout',mout);
+image.addEventListener('click',mclick);
+
+let isBlue=true;
+ function bgChange(){
+isBlue=!isBlue;
+document.body.style.backgroundColor= isBlue ? 'blue' : 'red'
+}
+setInterval(bgChange,3000)
+</script>
+</body>
+</html>
+
+

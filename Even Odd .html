@@ -1,0 +1,17 @@
+<html>
+<body>
+Enter value : <input type="text" id="f"><br>
+<button onclick="ev()">Check</button>
+<p id="res"></p>
+<script>
+function ev(){
+var a=parseInt(document.getElementById("f").value);
+if(a%2==0){
+document.getElementById("res").innerHTML= (a + "= is even number" );
+}
+else{document.getElementById("res").innerHTML= (a + "= is odd number");
+}
+}
+</script>
+</body>
+</html>

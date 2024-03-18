@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Blinking text </title>
+<style>
+.blink{animation : blinker 2s
+linear infinite;
+color: white;
+font-family : sans-serif;
+font-size:80px;}
+@keyframes blinker {
+50%{
+opacity : 0;
+		}
+	}
+</style>
+</head>
+<body bgcolor="red">
+<h1 class="blink" align="center">Warning</h1>
+<h4 ><marquee behavior="alternate" bgcolor="yellow" >"Read the message"</marquee></h4>
+</body>
+</html>

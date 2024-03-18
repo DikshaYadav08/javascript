@@ -1,0 +1,23 @@
+<html>
+<body>
+Enter Lower Range : <input type ="text" id="l"><br>
+Enter End Range : <input type ="text" id="e"><br>
+<button onclick="prim()">Find Prime</button>
+<input type ="text" id="result">
+<script>
+function prim(){
+ let a= Number(document.getElementById("l").value);
+ let b= Number(document.getElementById("e").value); 
+ for (let i=a;i<=b;i++){
+  let count= 0;
+  for (let j=1 ; j<=i;j++){
+  if (i%j==0){
+  count++; 
+	}
+  }
+  if(count== 2){
+  document.getElementId("result").value = + " " + j ;
+			}}
+			}
+  </script>
+  </body></html>

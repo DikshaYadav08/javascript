@@ -1,0 +1,43 @@
+<html>
+<body>
+<h3>calculator for o level grade</h3>
+<table border=1 style="border-collapse:collapse";>
+<tr><td>Enter your practical no</td>
+<td><input type="text" id="p"</td></tr>
+<tr><td>Enter your theory no</td>
+<td><input type="text" id="t"</td></tr>
+<tr><th colspan="2"><button onclick="le()">Result</button><th></tr>
+<tr><td>Total percentage</td>
+<td><input type="text" id="re" ></td></tr>
+</table>
+<h3 id="g"></h3>
+</table>
+<script>
+function le(){
+var a,b,c;
+a=parseInt(document.getElementById("p").value);
+b=parseInt(document.getElementById("t").value);
+c=(a*60/100)+(b*40/100);
+document.getElementById("re").value=c + "%";
+if(c>83){
+document.getElementById("g").innerHTML="Congratulations!<br>your grade is S";
+}
+else if(c>73){
+document.getElementById("g").innerHTML="Congratulations!<br>your grade is A";
+}
+else if(c>63){
+document.getElementById("g").innerHTML="Congratulations!<br>your grade is B";
+}
+else if(c>53){
+document.getElementById("g").innerHTML="Congratulations!<br>your grade is C";
+}
+else if(c>50){
+document.getElementById("g").innerHTML="Congratulations!<br>your grade is D";
+}
+else{
+document.getElementById("g").innerHTML="Sorry you Fail!<br>your grade is F";
+}
+}
+</script>
+</body>
+</html>

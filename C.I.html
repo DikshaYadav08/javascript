@@ -1,0 +1,33 @@
+<html>
+<head> <title>Compound Interest</title></head>
+<body>
+<h3>Calculate Compound Interest</h3>
+<table border=1>
+<tr>
+<td>Enter Principal Interest  :</td>
+<td> <input type="text" id="p" ></td></tr>
+<tr>
+<td>Enter Rate of Interest  :</td>
+<td> <input type="text" id="r" ></td></tr>
+<tr>
+<td>Enter Time(in Year)  :</td>
+<td> <input type="text" id="n" ></td></tr>
+<tr><th colspan=2>
+<button onclick="com()">Calculate</button></th></tr>
+</table><br>
+
+<div><b>Compound Interest is : <input type="text" id="bb"></b></div>
+ <script>
+ function com(){
+     let p = Number(document.getElementById("p").value);
+     let r = Number(document.getElementById("r").value);
+     let n = Number(document.getElementById("n").value);
+	 let A = p*Math.pow((1+r/100),n);
+	 let c = A-p;
+	document.getElementById("bb").value = c ;
+	}
+	</script>
+	</body></html>
+	
+ 
+ 

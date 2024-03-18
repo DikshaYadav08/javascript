@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+body{background-color:pink;}
+</style>
+</head>
+<body>
+<img src="bulboff.png" id="im" onmouseover="bulbon(this)"  onmouseout="bulboff(this)" height="500px" style="cursor:pointer">
+<script>
+function bulbon(x) {
+x.src="bulbon.png";
+}
+function bulboff(x) {
+x.src="bulboff.png";
+}
+
+let isPink=true;
+function change(){
+isPink=!isPink;
+document.body.style.backgroundColor=isPink?'pink':'aqua'
+}
+setInterval(change,1000)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+var number,r,n=0,temp;
+number=parseInt(prompt("enter number"));
+temp=number;
+while(number!=0)
+{
+r=number%10;
+n=n*10+r;
+number=parseInt(number/10);
+}
+document.write("reverse number is =" + n +"<br>");
+if(temp==n){
+document.write(n + "= is pallindrome number");
+}
+else
+{
+document.write(n + "= is not pallindrome number");
+}
+</script>
+</body>
+</html>

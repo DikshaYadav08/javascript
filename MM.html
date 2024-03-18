@@ -1,0 +1,29 @@
+html>
+<head><title>Simple Interest 2 method</title></head>
+<body>
+<h1>Calculate Simple Interest</h1>
+<table>
+<tr>
+<td>Enter Principal Interest  :</td>
+<td> <input type="text" id="p" ></td></tr>
+<tr>
+<td>Enter Rate of Interest  :</td>
+<td> <input type="text" id="r" ></td></tr>
+<tr>
+<td>Enter Time(in Year)  :</td>
+<td> <input type="text" id="n" ></td></tr>
+</table>
+<button onclick="cal()">OK</button>
+<h2 id="result"></h2>
+<script>
+      function cal(){
+      let p= Number(document.getElementById("p").value);
+      let r= Number(document.getElementById("r").value);
+      let n= Number(document.getElementById("n").value);
+	document.getElementById("result").innerHTML = "Simple Interest = " + (p*r*n/100))
+		}
+		</script>
+		</body>
+		</html>
+
+	

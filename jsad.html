@@ -1,0 +1,27 @@
+<html>
+<body>
+<table>
+<tr><td>Enter 1st Number :  </td><td><input type="text" id="f"></td></tr>
+<tr><td>Enter 2nd Number :  </td><td><input type="text" id="s"></td></tr>
+<tr><td><button onclick="add()">Add</button></td><td><input type="text" id="ad"></td></tr>
+<tr><td><button onclick="multi()">Multiply</button></td><td><input type="text" id="mu"></td></tr>
+</table>
+<script>
+function add(){
+var a =Number(document.getElementById("f").value);
+var b =Number(document.getElementById("s").value);
+var sum=a+b;
+document.getElementById("ad").value= "Sum = " + sum;
+alert("Sum of two numbers is " + sum);
+}
+
+function multi(){
+var a =Number(document.getElementById("f").value);
+var b =Number(document.getElementById("s").value);
+var multiply=a*b;
+document.getElementById("mu").value= "Multiply = "  + multiply;
+alert("Multiply of two numbers is " + multiply);
+}
+</script>
+</body>
+</html> 

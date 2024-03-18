@@ -1,0 +1,23 @@
+<html>
+<head>
+<style>
+.circle{
+width:200px;
+height:200px;
+background-color:pink;
+border:2px solid red;}
+</style>
+</head>
+<body >
+<div class="circle"></div>
+<script>
+var a=0;
+setInterval(change,1000);
+function change(){
+a=a+10;
+var target=document.getElementById("t");
+target.style.marginLeft=a+'px';
+}
+</script>
+</body>
+</html>

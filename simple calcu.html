@@ -1,0 +1,69 @@
+<html>
+<head> <title>Calculator</title></head>
+<body>
+<h1>Calculator</h1>
+<table>
+<tr>
+<td>Enter first Number :</td>
+<td> <input type="text" id="f" ></td></tr>
+<tr>
+<td>Enter Second Number :</td>
+<td> <input type="text" id="s" ></td></tr>
+</table>
+<button onclick="add()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="multi()">*</button>
+<button onclick="div()">/</button>
+<button onclick="mod()">%</button>
+<p id="result"></p>
+
+
+<script>
+ function add() {
+ let a=Number(document.getElementById("f").value);
+  let b=Number(document.getElementById("s").value);
+   document.getElementById("result").innerHTML=
+   "Addition = " + (a+b);
+   } 
+   
+   function sub() {
+ let a=Number(document.getElementById("f").value);
+  let b=Number(document.getElementById("s").value);
+   document.getElementById("result").innerHTML=
+      "Subtraction = " + (a-b); 
+	  }
+	  
+	  
+	  function multi() {
+ let a=Number(document.getElementById("f").value);
+  let b=Number(document.getElementById("s").value);
+   document.getElementById("result").innerHTML=
+      "Multiplication = " + (a*b); 
+	  }
+	  
+	  
+	  function div() {
+ let a=Number(document.getElementById("f").value);
+  let b=Number(document.getElementById("s").value);
+   document.getElementById("result").innerHTML=
+      "Divison = " + (a/b);
+	  }
+	  
+	  
+	  function mod() {
+ let a=Number(document.getElementById("f").value);
+  let b=Number(document.getElementById("s").value);
+   document.getElementById("result").innerHTML=
+      "Modulus = " + (a%b);
+	  }
+	  </script>
+	  </body></html>
+	
+   
+ 
+   
+   
+
+
+ 
+

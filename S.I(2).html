@@ -1,0 +1,32 @@
+<html>
+<head><title>Simple Interest 2 method</title></head>
+<body>
+<h1>Calculate Simple Interest</h1>
+<table border=1>
+<tr>
+<td>Enter Principal Interest  :</td>
+<td> <input type="text" id="p"></td></tr>
+<tr>
+<td>Enter Rate of Interest  :</td>
+<td> <input type="text" id="r"></td></tr>
+<tr>
+<td>Enter Time(in Year)  :</td>
+<td> <input type="text" id="n"></td></tr>
+<tr>
+<th colspan=2><button onclick="simp()">Calculate</button></th></tr>
+</table><br>
+
+<div><b>Simple Interest is : <input type="text" id="ss"></b></div>
+
+ <script>
+      function simp(){
+      let p = Number(document.getElementById("p").value);
+      let r = Number(document.getElementById("r").value);
+      let n = Number(document.getElementById("n").value);
+	  let I = (p*r*n/100);
+	  document.getElementById("ss").value =  I;
+		}
+      </script>
+		</body></html>
+
+	
